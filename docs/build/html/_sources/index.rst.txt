@@ -1,8 +1,4 @@
-.. Seastar documentation master file, created by
-   sphinx-quickstart on Sun Oct 30 09:39:35 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
+===================================
 Welcome to Seastar's documentation!
 ===================================
 
@@ -13,8 +9,19 @@ Feel free to use it for your project and learning purposes.
    :maxdepth: 2
    :caption: Contents:
 
-Just testing it out again
+What is Seastar?
+================
 
+Seastar is a system for programming GNN models using a vertex-centric approach. This new programming approach 
+ensures that the logic for various GNN models can be written intuitively. It also allows those reading 
+the code to ascertain the models purpose. The Seastar system can be used to implement models like GCN and GAT
+with relative ease.
+
+While Seastar provides a new programming approach, it can perform optimizations on the model to bridge some of the gaps in
+other GNN frameworks like DGL and PyG. Seastar takes a function representing the operations performed on a single 
+vertex as input.
+
+Seastar is successful in achieving lesser memory consumption and faster execution in comparison to PyG and DGL.
 
 Indices and tables
 ==================
