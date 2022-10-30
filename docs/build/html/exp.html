@@ -19,7 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="GCN" href="GCN.html" />
+    <link rel="next" title="APPNP" href="exp/appnp/APPNP.html" />
     <link rel="prev" title="Welcome to Seastar’s documentation!" href="index.html" /> 
 </head>
 
@@ -41,7 +41,11 @@
               <p class="caption" role="heading"><span class="caption-text">Codebase</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">exp</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="GCN.html">GCN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exp/appnp/APPNP.html">APPNP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exp/gat/GAT.html">GAT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exp/gcn/GCN.html">GCN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exp/rgcn/RGCN.html">RGCN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exp/run_exp.html">run_exp</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="python.html">python</a></li>
@@ -73,10 +77,22 @@
              
   <section id="exp">
 <h1>exp<a class="headerlink" href="#exp" title="Permalink to this heading"></a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">exp</span></code> (experiments) directory contains code for different GNN models like <code class="docutils literal notranslate"><span class="pre">gcn</span></code>, <code class="docutils literal notranslate"><span class="pre">gat</span></code>, <code class="docutils literal notranslate"><span class="pre">rgcn</span></code> and <code class="docutils literal notranslate"><span class="pre">appnp</span></code> with
+which the datasets are trained on. Each of the model stated above is implemented using <code class="docutils literal notranslate"><span class="pre">dgl</span></code>, <code class="docutils literal notranslate"><span class="pre">pyg</span></code> and <code class="docutils literal notranslate"><span class="pre">seastar</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">result</span></code> directory has a csv file <em>final_result.csv</em> which contains the results of the experiment/training
+conducted by each GNN model on the datasets.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="GCN.html">GCN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exp/appnp/APPNP.html">APPNP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exp/gat/GAT.html">GAT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exp/gcn/GCN.html">GCN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exp/rgcn/RGCN.html">RGCN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exp/run_exp.html">run_exp</a></li>
 </ul>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Need to figure out <code class="docutils literal notranslate"><span class="pre">nb_access</span></code> and <code class="docutils literal notranslate"><span class="pre">dataset</span></code> directory</p>
 </div>
 </section>
 
@@ -85,7 +101,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Seastar’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="GCN.html" class="btn btn-neutral float-right" title="GCN" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="exp/appnp/APPNP.html" class="btn btn-neutral float-right" title="APPNP" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
