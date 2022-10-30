@@ -46,6 +46,8 @@
 <li class="toctree-l2"><a class="reference internal" href="gcn/GCN.html">GCN</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rgcn/RGCN.html">RGCN</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">run_exp</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-exp-list-sample0">create_exp_list_sample0()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main">main()</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#if-name-main">if __name__ == __main__:</a></li>
 </ul>
 </li>
@@ -87,6 +89,46 @@ Colab or any other platform.</p>
 <p class="admonition-title">Note</p>
 <p>This is not where Seastar starts from</p>
 </div>
+<section id="create-exp-list-sample0">
+<h2>create_exp_list_sample0()<a class="headerlink" href="#create-exp-list-sample0" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="create_exp_list_sample0">
+<span class="sig-name descname"><span class="pre">create_exp_list_sample0</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#create_exp_list_sample0" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>According to the different GNN models passed as input through the command line,
+<code class="docutils literal notranslate"><span class="pre">create_exp_list_sample0</span></code> returns a list (<em>exp_list</em>) of GNNExp class objects.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>args</strong> – Contains the arguments passed through the command line. Arguments are models, systems, gpu and num_epochs.
+eg: <code class="docutils literal notranslate"><span class="pre">args</span> <span class="pre">=</span> <span class="pre">Namespace(gpu=0,</span> <span class="pre">models=['gcn'],</span> <span class="pre">num_epochs=200,</span> <span class="pre">systems=['dgl',</span> <span class="pre">'seastar'])</span></code></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List of GNNExp class objects. These objects can be from the following
+classes: GATExp, GCNExp, APPNPExp and RGCNExp</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="main">
+<h2>main()<a class="headerlink" href="#main" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition"></a></dt>
+<dd><p>Format the exception with a traceback.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>args</strong> – Contains the arguments passed through the command line. Arguments are models, systems, gpu and num_epochs.
+eg: <code class="docutils literal notranslate"><span class="pre">args</span> <span class="pre">=</span> <span class="pre">Namespace(gpu=0,</span> <span class="pre">models=['gcn'],</span> <span class="pre">num_epochs=200,</span> <span class="pre">systems=['dgl',</span> <span class="pre">'seastar'])</span></code></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
 <section id="if-name-main">
 <h2>if __name__ == __main__:<a class="headerlink" href="#if-name-main" title="Permalink to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Experiment&#39;</span><span class="p">)</span>

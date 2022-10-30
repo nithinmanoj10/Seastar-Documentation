@@ -7,6 +7,30 @@ Colab or any other platform.
 
 .. Note:: This is not where Seastar starts from
 
+create_exp_list_sample0()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. function:: create_exp_list_sample0 (args)
+
+    According to the different GNN models passed as input through the command line,
+    ``create_exp_list_sample0`` returns a list (*exp_list*) of GNNExp class objects.
+
+   :param args: Contains the arguments passed through the command line. Arguments are models, systems, gpu and num_epochs. 
+    eg: ``args = Namespace(gpu=0, models=['gcn'], num_epochs=200, systems=['dgl', 'seastar'])``
+   :rtype: List of GNNExp class objects. These objects can be from the following
+    classes: GATExp, GCNExp, APPNPExp and RGCNExp
+
+main()
+^^^^^^
+
+.. function:: main (args)
+
+   Format the exception with a traceback.
+
+   :param args: Contains the arguments passed through the command line. Arguments are models, systems, gpu and num_epochs. 
+    eg: ``args = Namespace(gpu=0, models=['gcn'], num_epochs=200, systems=['dgl', 'seastar'])``
+   :rtype: None
+
 if __name__ == __main__:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
