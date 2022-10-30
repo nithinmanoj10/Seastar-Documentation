@@ -5,9 +5,6 @@ Welcome to Seastar's documentation!
 This documentation was made to understand how the Seastar compiler works.
 Feel free to use it for your project and learning purposes.
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
 
 What is Seastar?
 ================
@@ -22,6 +19,13 @@ other GNN frameworks like DGL and PyG. Seastar takes a function representing the
 vertex as input.
 
 Seastar is successful in achieving lesser memory consumption and faster execution in comparison to PyG and DGL.
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Codebase
+
+   exp
+   python
 
 Indices and tables
 ==================
